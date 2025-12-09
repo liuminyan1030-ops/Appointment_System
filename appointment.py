@@ -3,8 +3,7 @@ class Appointment:
         # hidden properties
         self.__client_name = ""
         self.__client_phone = ""
-        # 0 = Available
-        self.__appt_type = 0            
+        self.__appt_type = 0            # 0 = Available
         self.__day_of_week = day_of_week
         self.__start_time_hour = int(start_time_hour)
 
@@ -81,7 +80,8 @@ class Appointment:
     # Format record for CSV file
     # ======================
     def format_record(self):
-        return f"{self.__client_name},{self.__client_phone},{self.__appt_type},{self.__day_of_week},{self.__start_time_hour}"
+        start = f"{self.__start_time_hour:02d}" 
+        return f"{self.__client_name},{self.__client_phone},{self.__appt_type},{self.__day_of_week},{start}"
 
     # ======================
     # String representation for printing appointment
