@@ -1,5 +1,4 @@
 
-
 # save_scheduled_appointments(appt_list)
 # ==========================================================
 def save_scheduled_appointments(appt_list):
