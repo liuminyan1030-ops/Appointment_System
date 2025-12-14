@@ -133,3 +133,4 @@ def calculate_weekly_fees(appt_list):
       total +=fee_map[t]
 
   print(f"Total weekly fees is ${total}")
+
