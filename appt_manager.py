@@ -1,3 +1,4 @@
+
 import os
 from appointment import Appointment
 # ================================================================
@@ -99,3 +100,5 @@ def show_appointments_by_day(appt_list,search_day):
     if (search_day !="" and appt.get_day_of_week().lower()==search_day.lower()):
       print(appt)
       found=True
+
+
